@@ -63,7 +63,7 @@ public class SamsungQualcommRIL extends RIL implements CommandsInterface {
 
     private Object mSMSLock = new Object();
     private boolean mIsSendingSMS = false;
-    private boolean isGSM = false;
+    protected boolean isGSM = false;
     public static final long SEND_SMS_TIMEOUT_IN_MS = 30000;
     private String homeOperator= SystemProperties.get("ro.cdma.home.operator.numeric");
     private String operator= SystemProperties.get("ro.cdma.home.operator.alpha");
